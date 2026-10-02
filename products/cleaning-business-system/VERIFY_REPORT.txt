@@ -1,0 +1,54 @@
+Verify run 2026-10-02T07:31:04  (53/53 passed)
+PASS LibreOffice found  [/run/current-system/sw/bin/soffice]
+PASS lint: only whitelisted functions  [used=['AND', 'COUNTIFS', 'DATE', 'EOMONTH', 'IF', 'IFERROR', 'INDEX', 'MATCH', 'OR', 'ROUND', 'ROWS', 'SUM', 'SUMIFS', 'TEXT', 'TODAY'] outside=[] []]
+PASS text: no banned wording (AI mentions)
+PASS tabs present  [['Start Here', 'Settings', 'Clients', 'Jobs', 'Invoices', 'Expenses', 'Monthly P&L']]
+PASS sample: formula cells recalculated  [11956 formula cells]
+PASS sample: zero error values in formula cells
+PASS sample: Jobs rate/total/date match expected for 30 rows
+PASS sample: empty Jobs rows show blank (I:P, rows 35-504)
+PASS sample: invoice count  [27 listed vs 27 expected]
+PASS sample: every invoice's number/client/amount/paid/balance/status/days overdue
+PASS sample: empty invoice rows show blank
+PASS sample: Monthly P&L jobs/revenue/expenses/cash by month
+PASS sample: category table total = expenses total  [N36=1298.69 vs 1298.69]
+PASS sample: Clients billed/balance roll-ups
+PASS sample: empty client rows show blank
+PASS empty: formula cells recalculated  [11956 formula cells]
+PASS empty: zero error values in formula cells
+PASS empty: Jobs rate/total/date match expected for 0 rows
+PASS empty: empty Jobs rows show blank (I:P, rows 5-504)
+PASS empty: invoice count  [0 listed vs 0 expected]
+PASS empty: every invoice's number/client/amount/paid/balance/status/days overdue
+PASS empty: empty invoice rows show blank
+PASS empty: Monthly P&L jobs/revenue/expenses/cash by month
+PASS empty: category table total = expenses total  [N36=0.0 vs 0]
+PASS empty: Clients billed/balance roll-ups
+PASS empty: empty client rows show blank
+PASS empty_plus1: formula cells recalculated  [11956 formula cells]
+PASS empty_plus1: zero error values in formula cells
+PASS empty_plus1: Jobs rate/total/date match expected for 1 rows
+PASS empty_plus1: empty Jobs rows show blank (I:P, rows 6-504)
+PASS empty_plus1: invoice count  [1 listed vs 1 expected]
+PASS empty_plus1: every invoice's number/client/amount/paid/balance/status/days overdue
+PASS empty_plus1: empty invoice rows show blank
+PASS empty_plus1: Monthly P&L jobs/revenue/expenses/cash by month
+PASS empty_plus1: category table total = expenses total  [N36=0.0 vs 0]
+PASS empty_plus1: Clients billed/balance roll-ups
+PASS empty_plus1: empty client rows show blank
+PASS sample_plus1: formula cells recalculated  [11956 formula cells]
+PASS sample_plus1: zero error values in formula cells
+PASS sample_plus1: Jobs rate/total/date match expected for 31 rows
+PASS sample_plus1: empty Jobs rows show blank (I:P, rows 36-504)
+PASS sample_plus1: invoice count  [28 listed vs 28 expected]
+PASS sample_plus1: every invoice's number/client/amount/paid/balance/status/days overdue
+PASS sample_plus1: empty invoice rows show blank
+PASS sample_plus1: Monthly P&L jobs/revenue/expenses/cash by month
+PASS sample_plus1: category table total = expenses total  [N36=1298.69 vs 1298.69]
+PASS sample_plus1: Clients billed/balance roll-ups
+PASS sample_plus1: empty client rows show blank
+PASS empty_plus1: new job pulled client's address  [18 Dock St, Springfield]
+PASS empty_plus1: new invoice INV-0001 for Lakeside Bakery  [INV-0001 / Lakeside Bakery]
+PASS empty_plus1: Sep P&L revenue = 120.00  [120.0]
+PASS sample_plus1: Lakeside Bakery is the last invoice  [Lakeside Bakery]
+PASS sample_plus1: Sep P&L revenue rose by exactly 120.00  [1182.5 -> 1302.5]

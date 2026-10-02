@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;}
+  *{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+  .canvas{width:2000px;height:1600px;position:relative;background:#f8fafc;overflow:hidden;}
+  .topbar{position:absolute;top:0;left:0;width:2000px;height:120px;background:#0d4f4a;display:flex;align-items:center;justify-content:space-between;padding:0 70px;}
+  .topbar .brand{color:#ffffff;font-size:34px;font-weight:700;}
+  .topbar .page{color:#5eead4;font-size:26px;font-weight:600;}
+  .h2{position:absolute;top:150px;left:70px;font-size:50px;font-weight:800;color:#0f2d2a;}
+  .sub{position:absolute;top:220px;left:70px;font-size:24px;color:#475569;width:1860px;}
+  .grid{position:absolute;top:320px;left:70px;width:1860px;display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .card{background:#ffffff;border-radius:14px;border:1px solid #e2e8f0;box-shadow:0 10px 22px rgba(15,23,42,.10);padding:26px 30px;}
+  .card h3{margin:0 0 10px 0;font-size:28px;color:#0f2d2a;display:flex;align-items:center;gap:12px;}
+  .num{width:38px;height:38px;border-radius:8px;background:#0d9488;color:#fff;font-weight:800;font-size:20px;display:inline-flex;align-items:center;justify-content:center;}
+  .card p{margin:0;font-size:19px;color:#475569;line-height:1.5;}
+  .legend{position:absolute;top:1340px;left:70px;width:1860px;background:#fffbea;border:2px solid #f3d64e;border-radius:12px;padding:20px 30px;display:flex;gap:40px;align-items:center;}
+  .legend .row{display:flex;align-items:center;gap:12px;font-size:22px;color:#1f2937;}
+  .swatch{width:28px;height:28px;border-radius:6px;display:inline-block;}
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="topbar"><div class="brand">Cleaning Business System</div><div class="page">5 of 5 — What's Inside</div></div>
+  <div class="h2">7 tabs. Everything a cleaning business needs.</div>
+  <div class="sub">Works in Google Sheets and Excel. Comes pre-loaded with sample data so you can see it working before you clear it.</div>
+
+  <div class="grid">
+    <div class="card"><h3><span class="num">1</span>Start Here</h3><p>5-step setup, the color key, and how to clear the sample data when you're ready for your own.</p></div>
+    <div class="card"><h3><span class="num">2</span>Settings</h3><p>Your business name, sales tax rate, payment terms, P&amp;L year, and a price list for up to 15 services.</p></div>
+    <div class="card"><h3><span class="num">3</span>Clients</h3><p>One row per client — contact info, address, usual service, custom rate, and auto-tracked balance owed.</p></div>
+    <div class="card"><h3><span class="num">4</span>Jobs</h3><p>Log every job by date and client. Mark it Completed and the price, tax, total and invoice number appear on their own.</p></div>
+    <div class="card"><h3><span class="num">5</span>Invoices</h3><p>Completed jobs become invoices automatically. Log payments and watch balances, status and days overdue update.</p></div>
+    <div class="card"><h3><span class="num">6</span>Expenses</h3><p>Track what you spend by category and month, feeding straight into your profit report.</p></div>
+    <div class="card"><h3><span class="num">7</span>Monthly P&amp;L</h3><p>Revenue, tax collected, expenses and net profit, totalled automatically for every month of the year.</p></div>
+  </div>
+
+  <div class="legend">
+    <div class="row"><span class="swatch" style="background:#0d9488"></span> Teal = type here</div>
+    <div class="row"><span class="swatch" style="background:#6b7280"></span> Gray = automatic</div>
+    <div class="row"><span class="swatch" style="background:#f3d64e"></span> Yellow = your Settings</div>
+  </div>
+</div>
+</body>
+</html>
